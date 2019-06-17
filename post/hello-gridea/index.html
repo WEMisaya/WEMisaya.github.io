@@ -7,13 +7,19 @@
 <meta name="description" content="温故而知新">
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<link rel="shortcut icon" href="https://wemisaya.github.io//favicon.ico?v=1560742669274">
+<link rel="shortcut icon" href="https://wemisaya.github.io//favicon.ico?v=1560743685484">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 <link rel="stylesheet" href="https://unpkg.com/papercss@1.6.1/dist/paper.min.css" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
 <link rel="stylesheet" href="https://wemisaya.github.io//styles/main.css">
 
+
+  
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css" />
+  
+
+  
 
 <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
 
@@ -85,7 +91,7 @@
             <p class="article-meta">
               2018-12-12
               
-                <a href="https://wemisaya.github.io//tag/gridea" class="badge success">
+                <a href="https://wemisaya.github.io//tag/gridea" class="badge secondary">
                   Gridea
                 </a>
               
@@ -123,11 +129,19 @@
           
         </div>
         
+          
+            <div class="paper" data-aos="fade-in">
+              <div id="gitalk-container"></div>
+            </div>
+          
+
+          
+        
       </div>
 
       <div class="sm-12 md-4 col sidebar">
   <div class="paper info-container">
-    <img src="https://wemisaya.github.io//images/avatar.png?v=1560742669274" class="no-responsive avatar">
+    <img src="https://wemisaya.github.io//images/avatar.png?v=1560743685484" class="no-responsive avatar">
     <div class="text-muted">温故而知新</div>
     <div class="social-container">
       
@@ -149,6 +163,12 @@
     </div>
     <div class="row">
       <ul>
+        
+          
+            <li>
+              <a href="https://wemisaya.github.io//post/about">关于</a>
+            </li>
+          
         
           
             <li>
@@ -188,6 +208,29 @@ AOS.init();
 hljs.initHighlightingOnLoad()
 
 </script>
+
+
+
+  
+    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    <script>
+
+      var gitalk = new Gitalk({
+        clientID: 'b3b0cb65ed96d23afecb',
+        clientSecret: 'd441b073c4d86d92c8ad6bdf8295c4ff5bdf5959',
+        repo: 'WEMisaya.github.io',
+        owner: 'WEMisaya',
+        admin: ['WEMisaya'],
+        id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+        distractionFreeMode: false  // Facebook-like distraction free mode
+      })
+
+      gitalk.render('gitalk-container')
+
+    </script>
+  
+
+  
 
 
 
